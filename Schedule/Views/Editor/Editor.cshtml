@@ -1,14 +1,12 @@
 ﻿@model int
 @{
     ViewData["Title"] = "PrintValue";
+
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>@Model</p>
-    
-</div>
 
-<div>
-    @Html.ActionLink("go home","Editor","Editor", null, new { @class = "page-scroll" })
+    @Html.ActionLink("Menu", "Index", "Home", null, new { @class = "page-scroll" })
 </div>

@@ -12,10 +12,13 @@ namespace Schedule.Controllers
         {
             _logger = logger;
         }
+        [HttpGet]
 
+        //METHOD TO DISPLAY RANDOM SHIT ON A PAGE
         public IActionResult Index()
         {
-            return View();
+            int test = 10;
+            return View(test);
         }
 
         public IActionResult Privacy()
