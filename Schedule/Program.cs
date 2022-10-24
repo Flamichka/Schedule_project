@@ -14,6 +14,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+//Подключение пользовательского DB контекста. //TO REFACTOR
+builder.Services.AddDbContext<ApplicationDbContext>(x =>x.UseSqlServer(
+    "Data Source=(local); Database=ScheduleDB; Persist Security Info=false; MultipleActiveResultSets=True; Truested_Connection=True;"
+    ));
+
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
