@@ -1,5 +1,6 @@
 namespace Schedule.Models
 {
+    //some random error shit
     public class ErrorViewModel
     {
         public string? RequestId { get; set; }
