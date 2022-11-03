@@ -1,0 +1,33 @@
+﻿    <link rel="stylesheet" href="~/css/Main.css" asp-append-version="true" />
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<!--Project Athena-->
+<body>
+
+    <div class="buttons">
+        <div class="header-menu"> 
+          <!-- <h1>Меню:</h1>-->
+          <nav>
+              <ul>
+                <li> 
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Student" asp-action="Student">Студент</a> 
+                </li>
+              </ul> 
+          </nav>
+    </div>
+
+        <div class="header-menu"> 
+          <!-- <h1>Меню:</h1>-->
+          <nav>
+              <ul>
+                <li> 
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Teacher" asp-action="Teacher">Преподаватель</a> 
+                </li>
+              </ul> 
+          </nav>
+        </div>
+
+    </div>
+  </body>
