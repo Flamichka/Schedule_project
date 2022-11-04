@@ -16,3 +16,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+button svg {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
